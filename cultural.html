@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <title>CULTURAL</title>
+        </head>
+            <style>
+                /* CSS styles */
+                body {
+                  margin: 0;
+                  padding: 0;
+                }
+                .navbar {
+                  position:-webkit-sticky;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  background-color: #333;
+                  color: #fff;
+                  padding: 20px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+                .navbar .logo {
+                  display: flex;
+                  align-items: center;
+                }
+                .navbar .logo img {
+                  height: 50px;
+                  margin-right: 10px;
+                }
+                .navbar ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                }
+                .navbar ul li {
+                  display: inline-block;
+                  margin-right: 20px;
+                }
+                .navbar ul li a {
+                  text-decoration: none;
+                  color: #fff;
+                  font-weight: bold;
+                  transition: color 0.3s ease;
+                }
+                .navbar ul li a:hover {
+                  color:deepskyblue;
+                }
+                .content {
+                  padding: 100px 20px;
+                }
+                h6, p {
+  font-family: sans-serif;
+}
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .photo-card {
+      position: relative;
+      width: 400px;
+      height: 500px;
+      margin: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      display:inline-flex;
+    }
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .photo-card .content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .photo-card:hover img {
+      transform: scale(1.1);
+    }
+    .photo-card:hover .content {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .photo-card h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .photo-card p {
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
+    .alert {
+    position:absolute;
+    top:500px;
+    padding: 20px;
+    background-color:black;
+    color: white;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 28px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+</style>
+            </head>
+            <body>
+              <div class="navbar">
+                <div class="logo">
+                  <img src="logo1.png" alt="Logo">
+                </div>
+                <ul>
+                  <li><a href="skite.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="news.html">Terms And Conditions</a></li>
+                  <li><a href="sample.php">Contact</a></li>
+                </ul>
+              </div>
+              <img src="cultural3.jpg" alt="Photo 1" width="100%" height="100%">
+              <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <strong>BOOK US!</strong> Click contact in navigation to book our agent.
+              </div>
+
+              <center>
+                <div class="photo-card">
+                  <img src="rishikesh.jpg" alt="Photo 1">
+                  <div class="content">
+                    <h3>RISHIKESH</h3>
+                    <p>Experience the wonders of RISHIKESH</p>
+                  </div>
+                </div>
+                
+                <div class="photo-card">
+                  <img src="rajasthan.jpg" alt="Photo 2">
+                  <div class="content">
+                    <h3>RAJASTHAN</h3>
+                    <p>Experience the wonders of RAJASTHAN</p>
+                  </div>
+                </div>
+                
+                <div class="photo-card">
+                  <img src="suraj.jpg" alt="Photo 3">
+                  <div class="content">
+                    <h3>SURAJ KUND MELA</h3>
+                    <p>Experience the wonders of SURAJ KUND MELA</p>
+                  </div>
+                </div>
+                
+                <div class="photo-card">
+                  <img src="madurai.jpg" alt="Photo 4">
+                  <div class="content">
+                    <h3>MADURAI</h3>
+                    <p>Experience the wonders of MADURAI</p>
+                  </div>
+                </div>
+                
+                <div class="photo-card">
+                  <img src="maha2.jpg" alt="Photo 5">
+                  <div class="content">
+                    <h3>MAHABALIPURAM</h3>
+                    <p>Experience the wonders of MAHABALIPURAM</p>
+                  </div>
+                </div>
+                
+                <div class="photo-card">
+                  <img src="ajanta.jpg" alt="Photo 6">
+                  <div class="content">
+                    <h3>AJANTA CAVES</h3>
+                    <p>Experience the wonders of AJANTA CAVES</p>
+                  </div>
+                </div>
+                </center>
+              </body>
+              </html>

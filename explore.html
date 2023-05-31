@@ -1,0 +1,399 @@
+<html>
+    <head>
+        <title>EXPLORE NOW</title>
+        </head>
+            <style>
+                /* CSS styles */
+                body {
+                  margin: 0;
+                  padding: 0;
+                }
+                .navbar {
+                  position:-webkit-sticky;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  background-color: #333;
+                  color: #fff;
+                  padding: 20px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+                .navbar .logo {
+                  display: flex;
+                  align-items: center;
+                }
+                .navbar .logo img {
+                  height: 50px;
+                  margin-right: 10px;
+                }
+                .navbar ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                }
+                .navbar ul li {
+                  display: inline-block;
+                  margin-right: 20px;
+                }
+                .navbar ul li a {
+                  text-decoration: none;
+                  color: #fff;
+                  font-weight: bold;
+                  transition: color 0.3s ease;
+                }
+                .navbar ul li a:hover {
+                  color:deepskyblue;
+                }
+                .content {
+                  padding: 100px 20px;
+                }
+                h6, p {
+  font-family: sans-serif;
+}
+
+.c-heroImageGrid {
+	position: relative;
+	overflow: hidden;
+	height: 40vw;
+	background: #fff;
+	margin-bottom: 10px;
+
+}
+
+.c-heroImageGrid .container {
+	display: flex;
+	align-items: flex-end;
+	position: absolute;
+	top: -20vw;
+	left: -8vw;
+	transform: rotateZ(45deg);
+	height: 100vw;
+	width: 105vw;
+}
+
+.c-heroImageGrid .container .column {
+	overflow: hidden;
+	position: relative;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(1) {
+	border-right: 8px solid white;
+	width: 25%;
+	height: 66vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(1):hover {
+	opacity: 0.90;
+	cursor: pointer;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(1):before {
+	position: absolute;
+	top: 8.4vw;
+	left: 8.1vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: rotateZ(-45deg);
+	content: "";
+	width: 37vw;
+	height: 38vw;
+	background-image: url(beach.jpg);
+}
+
+
+.c-heroImageGrid .container .column:nth-of-type(2) {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 75%;
+	height: 109.1vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row {
+	border-top: 8px solid #fff;
+}
+
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(1) {
+	position: relative;
+	overflow: hidden;
+	height: 50vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(1):hover {
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(1):before {
+	position: absolute;
+	top: -10.1vw;
+	left: -14.3vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: rotateZ(-45deg);
+	content: "";
+	width: 65vw;
+	height: 39vw;
+	background-image: url(pix8.jpg);
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) {
+	display: flex;
+	height: 40.5vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3) {
+	border-top: none;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) {
+	overflow: hidden;
+	width: 30%;
+	background-color: #8B8B8A;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) .text {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	transform: rotateZ(-45deg);
+	position: relative;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) .text h6 {
+	position: absolute;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.35vw;
+	width: 20vw;
+	top: 16vw;
+	left: 7vw;
+	line-height: 1.55vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) .text p {
+	text-align: right;
+	position: absolute;
+	color: #fff;
+	font-size: 0.9vw;
+	width: 18vw;
+	top: 23.5vw;
+	left: -3.5vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(2) {
+	position: relative;
+	width: 70%;
+	border-left: 8px solid white;
+	overflow: hidden;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(2):hover {
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(2):before {
+	position: absolute;
+	top: 0;
+	left: -40vw;
+	width: 110.1vw;
+	height: 110vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: rotateZ(-45deg);
+	content: "";
+	background-image: url(travel.jpg);
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3) {
+	position: relative;
+	height: 18.6vw;
+	overflow: hidden;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3):hover {
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3):before {
+	position: absolute;
+	top: 7.5vw;
+	left: 25vw;
+	width: 33vw;
+	height: 27vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: rotateZ(-45deg);
+	content: "";
+	background-image: url(shillong.jpg);
+}
+
+/* CSS styles */
+
+    .photo-card {
+      width: 450px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      margin: 15px;
+      overflow: hidden;
+      display:inline-flex;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .photo-card:hover {
+      transform: translateY(-5px);
+    }
+    .photo-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .photo-card .content {
+      padding: 15px;
+    }
+    .photo-card h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+    .photo-card p {
+      margin: 20px 0;
+      color: #777;
+    }
+    .alert {
+    position:absolute;
+    top:500px;
+    padding: 20px;
+    background-color:black;
+    color: white;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 28px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+              </style>
+            </head>
+            <body>
+              <div class="navbar">
+                <div class="logo">
+                  <img src="logo1.png" alt="Logo">
+                </div>
+                <ul>
+                  <li><a href="skite.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="news.html">Terms And Conditions</a></li>
+                  <li><a href="sample.php">Contact</a></li>
+                </ul>
+              </div>
+              <center>
+                <div class="c-heroImageGrid">
+                    <div class="container">
+                        <div class="column"></div>
+                        <div class="column">
+                            <div class="row"></div>
+                            <div class="row">
+                                <div>
+                                    <div class="text">
+                                        <h6>
+                                            Explore with
+                                            Us
+                                        </h6>
+                                        <p>
+                                            A thrill seeker will be spoilt for choice in India. 
+                                            From a snow leopard trail in the Hemis National Park 
+                                            in Ladakh to a motorcycle tour to Gurudongmar, the 
+                                            highest lake in India, and even an entertaining rickshaw
+                                            challenge across the country,these are the 6 best
+                                            adventure tours to book in India.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div></div>
+                            </div>
+                            <div class="row"></div>
+                        </div>
+                    </div>
+                </div>
+                <h2>OUR BEST SPOTS</h2>
+                <div class="photo-card">
+                    <img src="shillong.jpg" alt="Photo 2">
+                    <div class="content">
+                      <h3>SHILLONG</h3>
+                      <p>Experience the wonders of SHILLONG</p>
+                    </div>
+                  </div>
+                
+                  <div class="photo-card">
+                    <img src="hampi.jpg" alt="Photo 2">
+                    <div class="content">
+                      <h3>HAMPI</h3>
+                      <p>Experience the wonders of HAMPI</p>
+                    </div>
+                  </div>
+                
+                  <div class="photo-card">
+                    <img src="munnar.jpg" alt="Photo 2">
+                    <div class="content">
+                      <h3>MUNNAR</h3>
+                      <p>Experience the wonders of MUNNAR</p>
+                    </div>
+                  </div>
+                
+                  <div class="photo-card">
+                    <img src="goa.jpg" alt="Photo 2">
+                    <div class="content">
+                      <h3>GOA</h3>
+                      <p>Experience the wonders of GOA</p>
+                    </div>
+                  </div>
+                  
+                  <div class="photo-card">
+                    <img src="ladakh.jpg" alt="Photo 2">
+                    <div class="content">
+                      <h3>LADAKH</h3>
+                      <p>Experience the wonders of LADAKH</p>
+                    </div>
+                  </div>
+                
+                  <div class="photo-card">
+                    <img src="manali.jpg" alt="Photo 2">
+                    <div class="content">
+                      <h3>MANALI</h3>
+                      <p>Experience the wonders of MANALI</p>
+                    </div>
+                  </div>
+                
+                  <div class="photo-card">
+                    <img src="maha.jpg" alt="Photo 2">
+                    <div class="content">
+                      <h3>MAHABALIPURAM</h3>
+                      <p>Experience the wonders of MAHABALIPURAM</p>
+                    </div>
+                  </div>
+                
+                  <div class="photo-card">
+                    <img src="allepey.jpg" alt="Photo 2">
+                    <div class="content">
+                      <h3>ALLEPPEY</h3>
+                      <p>Experience the wonders of ALLEPPEY</p>
+                    </div>
+                  </div>
+                  </center>>
+            </body>
+</html>>

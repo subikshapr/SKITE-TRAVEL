@@ -1,0 +1,226 @@
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+.bg-img {
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("pix6.jpg");
+  width:100%;
+  height:100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+/* Position the navbar container inside the image */
+.container1 {
+  position:absolute;
+  margin: 12px;
+  width: 100px;
+  right:10px;
+}
+.h1{
+position:absolute;
+font-weight: bold;
+color:white;
+right:570px;
+bottom:400px;
+
+}
+
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color:transparent;
+  display:inline;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:deepskyblue;
+}
+.logo{
+position:absolute;
+left:20px;
+top:30px;
+
+}
+.a1 {
+  position:absolute;
+  font-weight: bold;
+  color:white;
+  right:570px;
+  bottom:370px;
+  
+  background-color: deepskyblue;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+}
+h1 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+   box-sizing: border-box;
+}
+.imageColumn {
+   float: left;
+   width: 25%;
+   height:55%;
+   padding: 30px;
+}
+.container {
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+}
+
+.container .box:hover .imgBox {
+  transform: translate(-3.5rem, -3.5rem);
+}
+
+.container .box:hover .content {
+  transform: translate(3.5rem, 3.5rem);
+}
+
+.imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+  
+}
+
+.imgBox img {
+  width: 300px;
+  height: 300px;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 1;
+  align-items: flex-end;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+
+.content h2 {
+  display: block;
+  font-size: 2rem;
+  color: #111;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+.content span {
+  color: #555;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 800px) {
+  .container .box:hover .content {
+    transform: translate(0, 2.0rem);
+  }
+  .container .box:hover .imgBox {
+    transform: translate(0, -3.0rem);
+  }
+}
+ /* CSS styles */
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.photo-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.photo-card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+.photo-card:hover {
+  transform: scale(1.05);
+}
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.photo-card:hover .overlay {
+  opacity: 1;
+}
+.photo-card h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.photo-card p {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+.footer1{
+ position:absolute;
+ text-align: center;
+ top:2400px;
+ bottom:0px;
+ color:#fff;
+}
+
